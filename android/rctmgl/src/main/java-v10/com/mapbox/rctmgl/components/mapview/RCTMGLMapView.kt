@@ -28,6 +28,7 @@ import com.mapbox.maps.extension.style.expressions.generated.Expression
 import com.mapbox.maps.extension.style.layers.Layer
 import com.mapbox.maps.extension.style.layers.generated.*
 import com.mapbox.maps.extension.style.layers.getLayer
+import com.mapbox.maps.extension.style.layers.properties.generated.IconRotationAlignment
 import com.mapbox.maps.extension.style.layers.properties.generated.ProjectionName
 import com.mapbox.maps.extension.style.layers.properties.generated.Visibility
 import com.mapbox.maps.extension.style.projection.generated.Projection
@@ -212,6 +213,7 @@ open class RCTMGLMapView(private val mContext: Context, var mManager: RCTMGLMapV
                 gesturesPlugin.removeOnMapLongClickListener(_this)
 
                 mPointAnnotationManager = mapView.annotations.createPointAnnotationManager(AnnotationConfig(layerId = "rctmgl-mapview-annotations"))
+                mPointAnnotationManager?.iconRotationAlignment = IconRotationAlignment.MAP
                 mPointAnnotationManager?.addClickListener(OnPointAnnotationClickListener { pointAnnotation ->
                         onMarkerClick(pointAnnotation)
                         false
