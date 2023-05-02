@@ -53,7 +53,7 @@ body:
   attributes:
     label: Standalone component to reproduce
     description: |-
-      - Use [our BugReportTemplate](https://github.com/rnmapbox/maps/blob/main/example/src/examples/BugReportExample.js) screens as a starting point.
+      - Use [our BugReportTemplate](https://github.com/msi89/mapbox-react-native/blob/main/example/src/examples/BugReportExample.js) screens as a starting point.
       - Component should be self contained - no extra libraries, external data, no parameters
       - Do not include setAccessToken or access token istelf.
     value: |-

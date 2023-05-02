@@ -156,7 +156,7 @@ export const addMapboxInstallerBlock = (
  * Dangerously adds the custom installer hooks to the Podfile.
  * In the future this should be removed in favor of some custom hooks provided by Expo autolinking.
  *
- * https://github.com/rnmapbox/maps/blob/main/ios/install.md#react-native--0600
+ * https://github.com/msi89/mapbox-react-native/blob/main/ios/install.md#react-native--0600
  */
 const withCocoaPodsInstallerBlocks: ConfigPlugin<MapboxPlugProps> = (
   config,

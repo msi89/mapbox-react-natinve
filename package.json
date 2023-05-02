@@ -16,7 +16,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rnmapbox/maps"
+    "url": "https://github.com/msi89/mapbox-react-native"
   },
   "main": "lib/commonjs/index",
   "module": "lib/module/index",

@@ -114,13 +114,13 @@ abstract class RCTSource<T : Source?>(context: Context?) : AbstractMapFeature(co
         if (existingSource != null) {
             mSource = existingSource
             if (!existings) {
-                Logger.w(LOG_TAG, "Source $iD was not marked as existing but found in style, it's deprecated: https://github.com/rnmapbox/maps/wiki/Deprecated-ExistingSourceLayer")
+                Logger.w(LOG_TAG, "Source $iD was not marked as existing but found in style, it's deprecated: https://github.com/msi89/mapbox-react-native/wiki/Deprecated-ExistingSourceLayer")
             }
         } else {
             if (existings) {
                 Logger.w(
                     LOG_TAG,
-                    "Source $iD was marked as existing but was not found in style, it's deprecated: https://github.com/rnmapbox/maps/wiki/Deprecated-ExistingSourceLayer"
+                    "Source $iD was marked as existing but was not found in style, it's deprecated: https://github.com/msi89/mapbox-react-native/wiki/Deprecated-ExistingSourceLayer"
                 )
             }
         }

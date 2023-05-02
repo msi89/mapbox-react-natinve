@@ -1,1 +1,1 @@
-https://github.com/rnmapbox/maps/issues/2254
+https://github.com/msi89/mapbox-react-native/issues/2254

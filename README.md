@@ -12,7 +12,7 @@
 </tr>
 </table>
 
-|  [![npm version](https://badge.fury.io/js/%40rnmapbox%2Fmaps.svg)](https://badge.fury.io/js/%40rnmapbox%2Fmaps)  | [![iOS & Android Build](https://github.com/rnmapbox/maps/actions/workflows/on-push.yml/badge.svg?branch=main)](https://github.com/rnmapbox/maps/actions/workflows/on-push.yml?branch=main)  |
+|  [![npm version](https://badge.fury.io/js/%40rnmapbox%2Fmaps.svg)](https://badge.fury.io/js/%40rnmapbox%2Fmaps)  | [![iOS & Android Build](https://github.com/msi89/mapbox-react-native/actions/workflows/on-push.yml/badge.svg?branch=main)](https://github.com/msi89/mapbox-react-native/actions/workflows/on-push.yml?branch=main)  |
 |---|---|
 
 
@@ -21,7 +21,7 @@ _A community-supported, open-source React Native library for building maps with 
 
 ---
 ## News & Discussions
-#### <span style="color:red">&rarr;</span> Call for additional maintainers [discussion thread](https://github.com/rnmapbox/maps/discussions/1551)
+#### <span style="color:red">&rarr;</span> Call for additional maintainers [discussion thread](https://github.com/msi89/mapbox-react-native/discussions/1551)
 
 ---
 
@@ -247,7 +247,7 @@ Example:
 ---
 ## Sponsors
 
-Help drive this repo forward - be a sponsor. Add a comment [here](https://github.com/rnmapbox/maps/discussions/1551) to discuss your sponsorship.
+Help drive this repo forward - be a sponsor. Add a comment [here](https://github.com/msi89/mapbox-react-native/discussions/1551) to discuss your sponsorship.
 
 <table style="border: none; border-width: 0px">
 <tr>

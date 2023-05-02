@@ -103,7 +103,7 @@ export class SymbolLayer extends AbstractLayer<Props, NativeTypeProps> {
     });
     if (isSnapshot && !this.deprecationLogged.snapshot) {
       console.warn(
-        'SymbolLayer: passing children for symbol layer is deprecated, please use @rnmapbox/maps Image component instead. https://github.com/rnmapbox/maps/wiki/Deprecated-SymbolLayerChildren',
+        'SymbolLayer: passing children for symbol layer is deprecated, please use @rnmapbox/maps Image component instead. https://github.com/msi89/mapbox-react-native/wiki/Deprecated-SymbolLayerChildren',
       );
       this.deprecationLogged.snapshot = true;
     }

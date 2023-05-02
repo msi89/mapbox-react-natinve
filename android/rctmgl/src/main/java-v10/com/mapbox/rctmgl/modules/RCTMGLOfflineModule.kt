@@ -615,7 +615,7 @@ class RCTMGLOfflineModule(private val mReactContext: ReactApplicationContext) :
     }
 
     private fun toJSONObjectSupportingLegacyMetadata(value: Value): JSONObject? {
-        // see https://github.com/rnmapbox/maps/issues/2803
+        // see https://github.com/msi89/mapbox-react-native/issues/2803
         try {
             return value.toJSONObject()
         } catch (err: org.json.JSONException) {

@@ -72,7 +72,7 @@ class RCTMGLSource : RCTMGLInteractiveElement {
 
     if style.sourceExists(withId: self.id) {
       if (!existing) {
-        Logger.log(level: .warn, message: "Warning source with id:\(optional: id) referred to existing source but `existing` attibute was missing. https://github.com/rnmapbox/maps/wiki/Deprecated-ExistingSourceLayer")
+        Logger.log(level: .warn, message: "Warning source with id:\(optional: id) referred to existing source but `existing` attibute was missing. https://github.com/msi89/mapbox-react-native/wiki/Deprecated-ExistingSourceLayer")
       }
       self.source = try! style.source(withId: self.id)
     } else {

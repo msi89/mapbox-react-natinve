@@ -85,7 +85,7 @@ end
 # --
 
 unless $RNMapboxMapsImpl
-  raise "Setting $RNMapboxMapsImpl is now required - https://github.com/rnmapbox/maps/wiki/Deprecated-RNMapboxImpl-Unset#ios"
+  raise "Setting $RNMapboxMapsImpl is now required - https://github.com/msi89/mapbox-react-native/wiki/Deprecated-RNMapboxImpl-Unset#ios"
 end
 # $RNMapboxMapsImpl = rnMapboxMapsDefaultImpl unless $RNMapboxMapsImpl
 
@@ -94,11 +94,11 @@ when 'mapbox'
   rnMapboxMapsTargetsToChangeToDynamic = ['MapboxMobileEvents', 'Turf', 'MapboxMaps', 'MapboxCoreMaps', 'MapboxCommon']
   MapboxImplVersion = $RNMapboxMapsVersion || rnMapboxMapsDefaultMapboxVersion
 when 'mapbox-gl'
-  puts 'WARNING: mapbox-gl in @rnmapbox/maps is deprecated. Set $RNMapboxMapsImpl=mapbox in your Podfile. See https://github.com/rnmapbox/maps/wiki/Deprecated-RNMapboxImpl-Maplibre#ios'
+  puts 'WARNING: mapbox-gl in @rnmapbox/maps is deprecated. Set $RNMapboxMapsImpl=mapbox in your Podfile. See https://github.com/msi89/mapbox-react-native/wiki/Deprecated-RNMapboxImpl-Maplibre#ios'
   rnMapboxMapsTargetsToChangeToDynamic = ['MapboxMobileEvents']
   MapboxImplVersion = $RNMapboxMapsVersion || rnMapboxMapsDefaultMapboxGLVersion
 when 'maplibre'
-  puts 'WARNING: maplibre in @rnmapbox/maps is deprecated. Set $RNMapboxMapsImpl=mapbox in your Podfile. See https://github.com/rnmapbox/maps/wiki/Deprecated-RNMapboxImpl-MapboxGL#ios'
+  puts 'WARNING: maplibre in @rnmapbox/maps is deprecated. Set $RNMapboxMapsImpl=mapbox in your Podfile. See https://github.com/msi89/mapbox-react-native/wiki/Deprecated-RNMapboxImpl-MapboxGL#ios'
   rnMapboxMapsTargetsToChangeToDynamic = ['MapboxMobileEvents']
 
   spm_version = ($RNMapboxMapsVersion || rnMapboxMapsDefaultMapLibreVersion).split
@@ -231,8 +231,8 @@ Pod::Spec.new do |s|
   s.summary		= "React Native Component for Mapbox"
   s.version		= package['version']
   s.authors		= { "Miklós Fazekas" => "mfazekas@szemafor.com (https://github.com/mfazekas/)" }
-  s.homepage    	= "https://github.com/rnmapbox/maps#readme"
-  s.source      	= { :git => "https://github.com/rnmapbox/maps.git" }
+  s.homepage    	= "https://github.com/msi89/mapbox-react-native#readme"
+  s.source      	= { :git => "https://github.com/msi89/mapbox-react-native.git" }
   s.license     	= "MIT"
   s.platform    	= :ios, "11.0"
 

@@ -33,7 +33,7 @@ if (safeExtGet("RNMapboxMapsImpl", defaultMapboxMapsImpl) == "mapbox") {
 
 android {
     if (safeExtGet("RNMapboxMapsImpl", defaultMapboxMapsImpl) == "maplibre") {
-        logger.warn('@rnmapbox/maps: Maplibre implementation is DEPRECATED and will be removed, set RNMapboxMapsImpl to mapbox- see https://github.com/rnmapbox/maps/wiki/Deprecated-RNMapboxImpl-Maplibre#android')
+        logger.warn('@rnmapbox/maps: Maplibre implementation is DEPRECATED and will be removed, set RNMapboxMapsImpl to mapbox- see https://github.com/msi89/mapbox-react-native/wiki/Deprecated-RNMapboxImpl-Maplibre#android')
         sourceSets {
             main {
                 java.srcDirs = ['src/main/java-mapboxgl/common','src/main/java-mapboxgl/maplibre']
@@ -41,7 +41,7 @@ android {
         }
     }
     else if (safeExtGet("RNMapboxMapsImpl", defaultMapboxMapsImpl) == "mapbox-gl") {
-        logger.warn('@rnmapbox/maps: Maplibre implementation is DEPRECATED and will be removed, set RNMapboxMapsImpl to mapbox  - see https://github.com/rnmapbox/maps/wiki/Deprecated-RNMapboxImpl-Maplibre#android')
+        logger.warn('@rnmapbox/maps: Maplibre implementation is DEPRECATED and will be removed, set RNMapboxMapsImpl to mapbox  - see https://github.com/msi89/mapbox-react-native/wiki/Deprecated-RNMapboxImpl-Maplibre#android')
         sourceSets {
             main {
                 java.srcDirs = ['src/main/java-mapboxgl/common','src/main/java-mapboxgl/mapbox']

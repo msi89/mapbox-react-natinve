@@ -47,7 +47,7 @@ export function transformStyle(
       )
     ) {
       console.warn(
-        `RNMapbox: Image or URL in ${styleProp} is deprecated, use Images component. See https://github.com/rnmapbox/maps/wiki/Deprecated-URLInIconImages`,
+        `RNMapbox: Image or URL in ${styleProp} is deprecated, use Images component. See https://github.com/msi89/mapbox-react-native/wiki/Deprecated-URLInIconImages`,
       );
     }
 

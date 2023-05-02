@@ -36,7 +36,7 @@ if (MGLModule == null) {
 }
 if (!MGLModule.MapboxV10) {
   console.warn(
-    '@rnmapbox/maps: Non v10 implementations are deprecated and will be removed in next version - see https://github.com/rnmapbox/maps/wiki/Deprecated-RNMapboxImpl-Maplibre',
+    '@rnmapbox/maps: Non v10 implementations are deprecated and will be removed in next version - see https://github.com/msi89/mapbox-react-native/wiki/Deprecated-RNMapboxImpl-Maplibre',
   );
 }
 
@@ -530,7 +530,7 @@ class MapView extends NativeBridgeComponent(
       if (addIfHasHandler('RegionDidChange')) {
         if (!this.deprecationLogged.regionDidChange) {
           console.warn(
-            'onRegionDidChange is deprecated and will be removed in next release - please use onMapIdle. https://github.com/rnmapbox/maps/wiki/Deprecated-RegionIsDidChange',
+            'onRegionDidChange is deprecated and will be removed in next release - please use onMapIdle. https://github.com/msi89/mapbox-react-native/wiki/Deprecated-RegionIsDidChange',
           );
           this.deprecationLogged.regionDidChange = true;
         }
@@ -543,7 +543,7 @@ class MapView extends NativeBridgeComponent(
       if (addIfHasHandler('RegionIsChanging')) {
         if (!this.deprecationLogged.regionIsChanging) {
           console.warn(
-            'onRegionIsChanging is deprecated and will be removed in next release - please use onCameraChanged. https://github.com/rnmapbox/maps/wiki/Deprecated-RegionIsDidChange',
+            'onRegionIsChanging is deprecated and will be removed in next release - please use onCameraChanged. https://github.com/msi89/mapbox-react-native/wiki/Deprecated-RegionIsDidChange',
           );
           this.deprecationLogged.regionIsChanging = true;
         }
