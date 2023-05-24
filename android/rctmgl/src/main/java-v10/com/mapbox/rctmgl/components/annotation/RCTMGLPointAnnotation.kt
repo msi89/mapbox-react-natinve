@@ -310,4 +310,12 @@ class RCTMGLPointAnnotation(private val mContext: Context, private val mManager:
     companion object {
         private const val MARKER_IMAGE_ID = "MARKER_IMAGE_ID"
     }
+
+    // customization
+    fun setRotation(angle: Double) {
+        if (marker != null) {
+            marker!!.iconRotate = angle
+            mMapView?.pointAnnotationManager?.update(marker!!)
+        }
+    }
 }

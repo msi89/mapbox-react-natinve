@@ -357,4 +357,12 @@ public class RCTMGLPointAnnotation extends AbstractMapFeature implements View.On
             refreshBitmap(mChildView);
         }
     }
+
+    // customization
+    public void setRotation(double angle) {
+        if (mAnnotation != null) {
+            mAnnotation.setRotation((float)angle);
+            mMapView.getSymbolManager().update(mAnnotation);
+        }
+    }
 }

@@ -73,6 +73,15 @@ The center point (specified as a map coordinate) of the annotation.
 
 
   
+### rotation
+
+```tsx
+number
+```
+Set annoation icon rotation
+
+
+  
 ### anchor
 
 TODO

@@ -65,6 +65,11 @@ type Props = BaseProps & {
   coordinate: Position;
 
   /**
+   * Set annoation icon rotation
+   */
+  rotation?: number;
+
+  /**
    * Specifies the anchor being set on a particular point of the annotation.
    * The anchor point is specified in the continuous space [0.0, 1.0] x [0.0, 1.0],
    * where (0, 0) is the top-left corner of the image, and (1, 1) is the bottom-right corner.
@@ -218,6 +223,7 @@ class PointAnnotation extends NativeBridgeComponent(
       onMapboxPointAnnotationDrag: this._onDrag,
       onMapboxPointAnnotationDragEnd: this._onDragEnd,
       coordinate: this._getCoordinate(),
+      rotation: this.props.rotation,
     };
     return (
       <RCTMGLPointAnnotation {...props}>

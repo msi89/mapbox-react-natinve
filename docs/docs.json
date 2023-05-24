@@ -3652,6 +3652,13 @@
         "description": "The center point (specified as a map coordinate) of the annotation."
       },
       {
+        "name": "rotation",
+        "required": false,
+        "type": "number",
+        "default": "none",
+        "description": "Set annoation icon rotation"
+      },
+      {
         "name": "anchor",
         "required": false,
         "type": {
