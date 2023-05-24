@@ -213,7 +213,7 @@ open class RCTMGLMapView(private val mContext: Context, var mManager: RCTMGLMapV
                 gesturesPlugin.removeOnMapLongClickListener(_this)
 
                 mPointAnnotationManager = mapView.annotations.createPointAnnotationManager(AnnotationConfig(layerId = "rctmgl-mapview-annotations"))
-                mPointAnnotationManager?.iconRotationAlignment = IconRotationAlignment.MAP
+                mPointAnnotationManager?.iconRotationAlignment = IconRotationAlignment.MAP // customization
                 mPointAnnotationManager?.addClickListener(OnPointAnnotationClickListener { pointAnnotation ->
                         onMarkerClick(pointAnnotation)
                         false
