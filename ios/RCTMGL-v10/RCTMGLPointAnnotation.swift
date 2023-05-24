@@ -36,6 +36,13 @@ class RCTMGLPointAnnotation : RCTMGLInteractiveElement {
       _updateCoordinate()
     }
   }
+
+ // customization
+  @objc var rotation : NSNumber? {
+    didSet {
+      _updateRotation()
+    }
+  }
   
   @objc var anchor: [String:NSNumber] = [:] {
     didSet {
@@ -63,6 +70,17 @@ class RCTMGLPointAnnotation : RCTMGLInteractiveElement {
       annotation.point = point
     }
   }
+
+  // customization
+  func _updateRotation() {
+    guard let rotation = rotation else {
+      return
+    }
+    update { annotation in
+      annotation.iconRotate = Double(rotation)
+    }
+  }
+
    
   func point() -> Point? {
     guard let coordinate = coordinate else {

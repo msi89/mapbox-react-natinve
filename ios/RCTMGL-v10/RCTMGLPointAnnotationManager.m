@@ -8,6 +8,7 @@ RCT_EXPORT_VIEW_PROPERTY(coordinate, NSString)
 RCT_EXPORT_VIEW_PROPERTY(draggable, BOOL)
 RCT_EXPORT_VIEW_PROPERTY(id, NSString)
 RCT_EXPORT_VIEW_PROPERTY(anchor, NSDictionary)
+RCT_EXPORT_VIEW_PROPERTY(rotation, NSNumber) // customization
 
 RCT_REMAP_VIEW_PROPERTY(onMapboxPointAnnotationDeselected, onDeselected, RCTBubblingEventBlock)
 RCT_REMAP_VIEW_PROPERTY(onMapboxPointAnnotationDrag, onDrag, RCTBubblingEventBlock)
