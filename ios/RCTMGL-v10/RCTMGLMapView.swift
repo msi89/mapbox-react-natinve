@@ -940,6 +940,7 @@ class PointAnnotationManager : AnnotationInteractionDelegate {
   
   init(annotations: AnnotationOrchestrator, mapView: MapView) {
     manager = annotations.makePointAnnotationManager(id: "rctmgl-mapview-point-annotations")
+    manager.iconRotationAlignment = IconRotationAlignment.map // customization
     manager.delegate = self
     self.mapView = mapView
   }
