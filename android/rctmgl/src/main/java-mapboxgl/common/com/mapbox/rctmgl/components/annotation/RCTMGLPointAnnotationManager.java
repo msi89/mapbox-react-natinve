@@ -85,4 +85,11 @@ public class RCTMGLPointAnnotationManager extends AbstractEventEmitter<RCTMGLPoi
                 break;
         }
     }
+
+    // customization
+    @ReactProp(name="rotation")
+    public void setRotation(RCTMGLPointAnnotation annotation, double angle) {
+        annotation.setRotation(angle);
+    }
+
 }

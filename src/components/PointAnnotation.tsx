@@ -113,6 +113,11 @@ type Props = BaseProps & {
   children: React.ReactElement | [React.ReactElement, React.ReactElement];
 
   style?: ViewProps['style'];
+  // customization
+  /**
+   * Set annoation icon rotation
+   */
+  rotation?: number;
 };
 
 /**
@@ -218,6 +223,8 @@ class PointAnnotation extends NativeBridgeComponent(
       onMapboxPointAnnotationDrag: this._onDrag,
       onMapboxPointAnnotationDragEnd: this._onDragEnd,
       coordinate: this._getCoordinate(),
+      // customization
+      rotation: this.props.rotation,
     };
     return (
       <RCTMGLPointAnnotation {...props}>
